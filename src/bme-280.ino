@@ -1,24 +1,30 @@
 /***************************************************************************
-  This was adapted from a library for the BME280 humidity, temperature & pressure sensor
-  Designed specifically to work with the Adafruit BME280 Breakout
+  This was adapted from a library for the BME280 humidity, temperature & pressure 
+  sensor Designed specifically to work with the Adafruit BME280 Breakout
   ----> http://www.adafruit.com/products/2650
   These sensors use I2C or SPI to communicate, 2 or 4 pins are required
   to interface.
+
   Hint: the default I2C address used by the library is (0x77), as in
   Adafruit_BME280.h. If you sensor board uses a different address you
   can set your own via the .begin(...) method.
+
   Adafruit invests time and resources providing this open source code,
   please support Adafruit andopen-source hardware by purchasing products
   from Adafruit!
+
   Written by Limor Fried & Kevin Townsend for Adafruit Industries.
   BSD license, all text above must be included in any redistribution
+ ***************************************************************************
   This file was modified by Markus Haack (https://github.com/mhaack)
   in order to work with Particle Photon & Core.
+ ***************************************************************************
   This file was modified by Eric Zhang (https://github.com/ericsibored)
   in order to report data to Particle Cloud 
-  This file was modified by Leonard Lo in order to print out sensor output
-  to serial port for function verification. Also commmented out Particle 
-  messeage publish, added pressure cloud variable.
+ *************************************************************************** 
+  2019/10/15: This file was modified by Leonard Lo in order to print out sensor 
+  output to serial port for function verification. Also commmented out Particle 
+  messeage publish, added pressure cloud variable. 
  ***************************************************************************/
 
 // #include "Adafruit_Sensor.h"
